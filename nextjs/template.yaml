@@ -50,22 +50,6 @@ spec:
           title: GitHub Organization
           type: string
           description: The GitHub Organization where repositories should be created
-    - title: Choose a location
-      required:
-        - repoUrl
-        - dryRun
-      properties:
-        repoUrl:
-          title: Repository Location
-          type: string
-          ui:field: RepoUrlPicker
-          ui:options:
-            allowedHosts:
-              - github.com
-        dryRun:
-          title: Only perform a dry run, don't publish anything
-          type: boolean
-          default: false
   steps:
     - id: generateSource
       name: Generate Next.js Application
