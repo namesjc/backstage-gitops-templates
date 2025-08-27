@@ -23,6 +23,11 @@ spec:
           maxLength: 50
           pattern: "^([a-zA-Z][a-zA-Z0-9]*)(-[a-zA-Z0-9]+)*$"
           ui:autofocus: true
+        description:
+          title: Description
+          type: string
+          description: Description for the Component, and resulting Git repository
+          maxLength: 100
         owner:
           title: Owner
           type: string
@@ -99,7 +104,6 @@ spec:
       name: Create GitOps Manifests Repository
       action: publish:github
       input:
-        allowedHosts: ["github.com"]
         description: ${{ parameters.description }}
         repoUrl: github.com?owner=${{ parameters.organization }}&repo=${{ parameters.name }}-manifests
         defaultBranch: main
