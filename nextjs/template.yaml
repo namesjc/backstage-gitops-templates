@@ -70,7 +70,7 @@ spec:
       input:
         repoVisibility: public
         description: This is ${{ parameters.name }}, a Next.js application.
-        repoUrl: ${{ parameters.repoUrl }}
+        repoUrl: github.com?owner=${{ parameters.organization }}&repo=${{ parameters.name }}
         defaultBranch: main
         sourcePath: ./source
 
