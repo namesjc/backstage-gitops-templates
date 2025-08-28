@@ -1,5 +1,8 @@
 site_name: deploy-application
 site_description: Deploy Application to Environment
 
+nav:
+  - Introduction: index.md
+
 plugins:
   - techdocs-core
